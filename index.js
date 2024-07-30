@@ -1,12 +1,7 @@
-const age =24;
-const name1="amiya kalita"
-const dob="01/01/2000"
+let box= document.querySelector("div"),
+input = document.querySelector("input");
 
-function sayName(){
-  console.log("my name is"+name1);
-}
-
-
-function is(){
-  return age>=18
-}
+input.addEventListener("input",()=>{
+  box.style.borderRadius = input.value;
+  box.style.background= input.value;
+});
